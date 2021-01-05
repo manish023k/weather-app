@@ -7,6 +7,7 @@ console.log(__dirname);
 console.log(__filename);
 //set up the express application
 const app = express();
+const port=process.env.PORT || 3000;
 
 
 // set up the paths for the app
@@ -93,6 +94,6 @@ app.get('*', (req, res) => {
 //      location:'Malout'
 //  }]);
 // })
-app.listen('3000', () => {
-    console.log('app is running on the port:3000');
+app.listen(port, () => {
+    console.log('app is running on the port:'+port);
 })

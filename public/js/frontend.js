@@ -15,7 +15,7 @@ loca.addEventListener('submit', (e) => {
     else {
         address = input.value;
         const insert = document.getElementById('insert');
-        fetch(`http://localhost:3000/weather?address=${address}`).then((response) => {
+        fetch(`/weather?address=${address}`).then((response) => {
             response.json().then((data) => {
                 if (data.error) {
                     // console.log(data.error);
