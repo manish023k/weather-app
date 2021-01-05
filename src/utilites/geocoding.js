@@ -1,5 +1,4 @@
 const request = require('postman-request');
-const chalk = require('chalk');
 const geocoding = (address, callback) => {
     const url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + encodeURIComponent(address) + '.json?proximity=-74.70850,40.78375&access_token=pk.eyJ1IjoibWFuaXNoLWt1bWFyIiwiYSI6ImNrZ2tobTE1czE4NXMyenRlazQzNjl5amsifQ.Uyo7LhCLL0xlNLG48UBRMQ&limit=1'
     request({ url: url, json: true }, (error, response) => {

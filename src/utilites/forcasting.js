@@ -1,5 +1,4 @@
 const request=require('postman-request');
-const chalk = require('chalk');
 const forcast = (lat,long, loc,callback) => {
     const url = 'http://api.weatherstack.com/current?access_key=d3c91acd09a881f301d2a16adf484b1e&query=' + encodeURIComponent(lat) + ',' + encodeURIComponent(long) + '&units';
     request({url:url,json:true},(error,response)=>{
