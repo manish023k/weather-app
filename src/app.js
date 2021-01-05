@@ -32,8 +32,8 @@ app.get('/', (req, res) => {
 })
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
-        authorName: "Manish Kumar Kanday",
-        location: "Malout Punjab"
+        authorName: "Manish Kumar",
+        location: "Malout,Punjab"
     });
 })
 app.get('/help', (req, res) => {
@@ -94,6 +94,6 @@ app.get('*', (req, res) => {
 //      location:'Malout'
 //  }]);
 // })
-app.listen(port, () => {
-    console.log('app is running on the port:'+port);
+app.listen(port , () => {
+    console.log('app is running on the port:'+ port);
 })
