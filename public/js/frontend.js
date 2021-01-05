@@ -29,6 +29,7 @@ loca.addEventListener('submit', (e) => {
                     // console.log(data.location); 
                     insert.innerHTML = `
                     <h1>Weather Info</h1>
+                    <p><strong>${data.description}</strong></p>
                     <p>Temprature :<strong>${data.temperature}</strong></p>
                    <p>Feelslike :<strong>${data.feelslike}</strong></p>
                    <p>Location :<strong>${data.location}</strong></p>
