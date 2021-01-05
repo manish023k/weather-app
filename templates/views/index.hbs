@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/notes/weather.png" type="image/x-icon">
+    {{!--
+    <link rel="stylesheet" href="style.css"> --}}
+    <title>Weather App</title>
+</head>
+
+<body style="display: flex; flex-direction:column; min-height:100vh">
+    {{>header}}
+    <div class="container" style="flex-grow: 1;">
+        <div id="alertmsg">
+            
+        </div>
+        
+
+        <h1>Home Page Using The Template </h1>
+        <form id="loc">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Search Here</label>
+                <input type="text" class="form-control" id="location" placeholder="Enter Location">
+            </div>
+            <button type="submit" id="btnLocation" class="btn btn-outline-primary ">Submit</button>
+        </form>
+        <hr>
+        <div class="row" id="insert">
+
+        </div>
+    </div>
+    {{>footer}}
+    <script src="/js/frontend.js"></script>
+    
+</body>
+
+</html>

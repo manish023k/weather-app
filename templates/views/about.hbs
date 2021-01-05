@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About Page</title>
+</head>
+<body style="display: flex; flex-direction:column; min-height:100vh">
+       {{>header}}
+       <div class="container" style="flex-grow: 1;">
+
+       <h1>Author Info:</h1>
+       <h2>{{authorName}}</h2>
+       <span>{{location}}</span>
+       </div>
+        {{>footer}}
+</body>
+</html>
